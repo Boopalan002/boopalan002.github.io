@@ -12,11 +12,18 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
   <style>
-  body 
+  .affix
+{
+      top:0;
+      width: 100%;
+      z-index: 1;
+  }
+body 
   {
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
       color: #818181;
+    position:relative;
   }
   h2 
   {
@@ -37,15 +44,16 @@
   .jumbotron 
   {
 	  background:url('http://res.cloudinary.com/dwjej2tbp/image/upload/v1510566674/codepenboopalanimage_aybp0s.jpg');
+    
       background-repeat:no-repeat;
       background-size:100% 120%;
-	  color: #bd234c;
+	  color: #fa3432;
       padding: 190px 20px;
       font-family: Gill Sans MT, sans-serif;
   }
   .container-fluid 
   {
-      padding: 60px 50px;
+      padding: 2px 15px;
   }
   
   .logo-small 
@@ -60,15 +68,16 @@
   }
   .navbar 
   {
-      margin-bottom: 0;
-      background-color:#A9A9A9;
+      margin-bottom: 0px;
+      background-color:red;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
+    font-weight:bold;
       line-height: 1.42857143 !important;
-      letter-spacing: 4px;
+      letter-spacing: 2px;
       border-radius: 0;
-      font-family: Montserrat, sans-serif;
+      font-family: Gill Sans MT, sans-serif;
   }
   .navbar li a, .navbar .navbar-brand 
   {
@@ -79,7 +88,7 @@
   {
       color: white !important;
 	  font-weight:bold;
-      background-color:	#5F9EA0 !important;
+      background-color:	#ab9 !important;
   }
   .navbar-default .navbar-toggle 
   {
@@ -103,6 +112,7 @@
   {
     max-height:300px;
   }
+  
   }
   @media only screen and (max-width: 480px) 
   {
@@ -116,7 +126,7 @@
     }
     div.jumbotron
   {
-    max-height:300px;
+    max-height:350px;
   }
   }
 @media only screen and (max-width: 380px) 
@@ -127,7 +137,7 @@
     }
   div.jumbotron
   {
-    max-height:300px;
+    max-height:350px;
   }
 }
 
@@ -149,9 +159,6 @@
     max-height:280px;
   }
 } 
-  
-  
-      
 
   </style>
 </head>
@@ -161,21 +168,30 @@
 
 
 
+<!--Main Code-->
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <div class="jumbotron text-left" style="height:500px;">
+    <div class="container-fluid">
+  <h1 style="font-family:Dotum, sans-serif;">Hello I'm</h1>
+  <h2>Boopalan <span>Sundaramoorthy</span></h2>
+  <p>Web Designer & Developer</p> 
+      </div>
+</div>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
+ <nav class="navbar navbar-default" role="navigation" data-spy="affix" data-offset-top="450" style="background-color:#ADD8E6;">
+  <div class="container-fluid" >
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="true">
+        <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>               
       </button>
-      <a class="navbar-brand" href="#myPage" style="font-size:40px;"><span style="color:#800080;">S</span><span style="color:#000080;">B</span></a>
+      <a class="navbar-brand" href="#myPage" style="font-size:30px;"><span style="color:#800080;">S</span><span style="color:#000080;">B</span></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
+      <ul id="list1" class="nav navbar-nav navbar-right" data-toggle="collapse" data-target=".in">
+        <li class="active"><a href="#about">ABOUT</a></li>
         <li><a href="#skills">SKILLS</a></li>
         <li><a href="#education">EDUCATION</a></li>
         <li><a href="#works">WORKS</a></li>
@@ -184,16 +200,9 @@
       </ul>
     </div>
   </div>
-</nav>
-
-<div class="jumbotron text-left" style="height:500px;">
-  <h1 style="font-family:Dotum;">Hello I'm</h1>
-  <h2>Boopalan <span>Sundaramoorthy</span></h2>
-  <p>Web Designer & Developer</p> 
-</div>
-
+</nav> 
+    
 <!-- Container (About Section) -->
-
 <div id="about" class="container-fluid" style="background-color:#e6ffe6;">
   <div class="row">
     <div class="col-sm-8">
@@ -382,7 +391,7 @@
 	</div>
   </div>
 </div>
-</div>
+</>
 
 <!-- Container (Gallery Section) -->
 <div class="container-fluid text-left" id="gallery" style="background-color:#f1daf1;">
@@ -500,8 +509,5 @@
   
   <p style="text-align:center;font-weight:bold;color:black;">BoopalanSundaramoorthy. Copyright @ SB 2017.
     </p>
-</body>
-  
-  
 </body>
 </html>
