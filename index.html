@@ -1,22 +1,49 @@
 <!DOCTYPE html>
-<html >
+<html lang="en" >
 <head>
-<title>myportfolio</title>
-<meta charset="UTF-8">
-<meta charset="utf-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-  <style>
- .affix
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>myportfolio</title>
+    <style type="text/css">
+	div#about
+{
+  padding-top:60px;
+}
+div#skills
+{
+  padding-top:60px;
+}
+div#education
+{
+  padding-top:60px;
+}
+div#works
+{
+  padding-top:60px;
+}
+div#gallery
+{
+  padding-top:60px;
+}
+div#contact
+{
+  padding-top:60px;
+}
+.affix
 {
       top:0;
       width: 100%;
       z-index: 1;
+  }
+  .affix ~ .container-fluid {
+     position: relative;
+     top: 1px;
   }
 body 
   {
@@ -46,9 +73,9 @@ body
 	  background:url('http://res.cloudinary.com/dwjej2tbp/image/upload/v1510566674/codepenboopalanimage_aybp0s.jpg');
     
       background-repeat:no-repeat;
-      background-size:100% 120%;
+      background-size:100% 110%;
 	  color: #2F4F4F;
-      padding: 190px 20px;
+      padding-top:350px;
       font-family: Gill Sans MT, sans-serif;
   }
   .container-fluid 
@@ -69,7 +96,7 @@ body
   .navbar 
   {
       margin-bottom: 0px;
-      background-color:#A9A9A9;
+      background-color: #A9A9A9;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -110,8 +137,12 @@ body
     }
      div.jumbotron
   {
-    max-height:300px;
+    max-height:400px;
   }
+    div.jumbotron h2
+    {
+      font-size:30px;
+    }
   
   }
   @media only screen and (max-width: 480px) 
@@ -120,13 +151,23 @@ body
 	{
         font-size: 100px;
     }
+   
     div.jumbotron h2 
 	{
-        font-size: 25px;
+        font-size: 20px;
+    }
+    div.jumbotron h2 span
+    {
+      display:block;
+      font-size:20px;
+    }
+    div.jumbotron p
+    {
+      font-size:15px;
     }
     div.jumbotron
   {
-    max-height:350px;
+    max-height:300px;
   }
   }
 @media only screen and (max-width: 380px) 
@@ -147,7 +188,7 @@ body
 	{
         display:block;
         font-size: 18px;
-        font-weight:bold;
+       
     }
   div.jumbotron p
 	{
@@ -159,20 +200,26 @@ body
     max-height:280px;
   }
 } 
-  </style>
+	</style>
 </head>
+
+<body>
+  
+
 <!--Main Code-->
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="10">
-  <div class="jumbotron text-left" style="height:680px;">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+<div class="jumbotron text-left" style="height:570px;">
     <div class="container-fluid">
   <h1 style="font-family:Dotum, sans-serif;">Hello I'm</h1>
   <h2>Boopalan <span>Sundaramoorthy</span></h2>
   <p>Web Designer & Developer</p> 
       </div>
 </div>
-
+  
  <nav class="navbar navbar-default" role="navigation" data-spy="affix" data-offset-top="600" style="background-color:#ADD8E6;">
-  <div class="container-fluid" >
+  <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="true">
         <span class="sr-only">Toggle navigation</span>
@@ -194,7 +241,6 @@ body
     </div>
   </div>
 </nav> 
-    
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid" style="background-color:#e6ffe6;">
   <div class="row">
@@ -384,7 +430,7 @@ body
 	</div>
   </div>
 </div>
-</>
+
 
 <!-- Container (Gallery Section) -->
 <div class="container-fluid text-left" id="gallery" style="background-color:#f1daf1;">
@@ -502,5 +548,8 @@ body
   
   <p style="text-align:center;font-weight:bold;color:black;">BoopalanSundaramoorthy. Copyright @ SB 2017.
     </p>
+</body>
+  
+  
 </body>
 </html>

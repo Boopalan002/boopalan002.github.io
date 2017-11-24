@@ -1,0 +1,189 @@
+div#about
+{
+  padding-top:60px;
+}
+div#skills
+{
+  padding-top:60px;
+}
+div#education
+{
+  padding-top:60px;
+}
+div#works
+{
+  padding-top:60px;
+}
+div#gallery
+{
+  padding-top:60px;
+}
+div#contact
+{
+  padding-top:60px;
+}
+.affix
+{
+      top:0;
+      width: 100%;
+      z-index: 1;
+  }
+  .affix ~ .container-fluid {
+     position: relative;
+     top: 1px;
+  }
+body 
+  {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+    position:relative;
+  }
+  h2 
+  {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 
+  {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron 
+  {
+	  background:url('http://res.cloudinary.com/dwjej2tbp/image/upload/v1510566674/codepenboopalanimage_aybp0s.jpg');
+    
+      background-repeat:no-repeat;
+      background-size:100% 110%;
+	  color: #2F4F4F;
+      padding-top:350px;
+      font-family: Gill Sans MT, sans-serif;
+  }
+  .container-fluid 
+  {
+      padding: 2px 15px;
+  }
+  
+  .logo-small 
+  {
+      color: #f4511e;
+      font-size: 50px;
+  }
+  .logo 
+  {
+      color: #f4511e;
+      font-size: 150px;
+  }
+  .navbar 
+  {
+      margin-bottom: 0px;
+      background-color: #A9A9A9;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+    font-weight:bold;
+      line-height: 1.42857143 !important;
+      letter-spacing: 2px;
+      border-radius: 0;
+      font-family: Gill Sans MT, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand 
+  {
+      color: #000080 !important;
+	  font-weight:bold;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a 
+  {
+      color: white !important;
+	  font-weight:bold;
+      background-color:	#ab9 !important;
+  }
+  .navbar-default .navbar-toggle 
+  {
+      border-color: transparent;
+      color: red !important;
+  }
+  
+  @media screen and (max-width: 768px) 
+  {
+    .col-sm-4 
+	{
+	  text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg 
+	{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+     div.jumbotron
+  {
+    max-height:400px;
+  }
+    div.jumbotron h2
+    {
+      font-size:30px;
+    }
+  
+  }
+  @media only screen and (max-width: 480px) 
+  {
+    .logo 
+	{
+        font-size: 100px;
+    }
+   
+    div.jumbotron h2 
+	{
+        font-size: 20px;
+    }
+    div.jumbotron h2 span
+    {
+      display:block;
+      font-size:20px;
+    }
+    div.jumbotron p
+    {
+      font-size:15px;
+    }
+    div.jumbotron
+  {
+    max-height:300px;
+  }
+  }
+@media only screen and (max-width: 380px) 
+{
+  div.jumbotron h2 
+	{
+        font-size: 20px;
+    }
+  div.jumbotron
+  {
+    max-height:350px;
+  }
+}
+
+@media only screen and (max-width: 375px)
+{
+  div.jumbotron h2 span
+	{
+        display:block;
+        font-size: 18px;
+       
+    }
+  div.jumbotron p
+	{
+        font-size: 13px;
+        font-weight:bold;
+    } 
+  div.jumbotron
+  {
+    max-height:280px;
+  }
+} 
